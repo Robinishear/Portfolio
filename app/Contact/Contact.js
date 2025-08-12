@@ -93,14 +93,14 @@ export default function Contact() {
 
         {/* Right Information */}
         <div className="p-6 w-full max-w-md shadow-smrelative font-bold rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 border border-gray-300">
-          <h2 className="text-indigo-600 font-extrabold text-xl text-center mb-4 select-none">
+          <h2 className="0 font-extrabold text-xl text-center mb-4 select-none">
             Our Information
           </h2>
           <hr className="border-gray-300 mb-6" />
 
           <div className="space-y-6 text-center">
             <div className="flex items-center justify-center gap-3 ">
-              <FaMapMarkerAlt className="text-indigo-600 text-lg" />
+              <FaMapMarkerAlt className="0 text-lg" />
               <div>
                 <p className="font-semibold">Address</p>
                 <p className="text-sm">
@@ -110,7 +110,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-center justify-center gap-3 ">
-              <FaEnvelope className="text-indigo-600 text-lg" />
+              <FaEnvelope className="0 text-lg" />
               <div>
                 <p className="font-semibold">Email</p>
                 <p className="text-sm">mdrobinahmed57898@gmail.com</p>
