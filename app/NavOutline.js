@@ -68,6 +68,13 @@ const Navbar = () => {
                 Contact <span className={underline}></span>
               </button>
             </Link>
+            <a
+              href="/resume.pdf"
+              download="Tasin-Resume.pdf"
+              className="relative text-xl sm:text-2xl font-bold text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition   duration-2000 bg-gradient-to-r from-black via-gray-900 to-black"
+            >
+              Download Resume
+            </a>
             {/* <Link href="/download">
               <button className={btnClass}>
                 download <span className={underline}></span>
