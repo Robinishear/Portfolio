@@ -42,28 +42,28 @@ export default function RootLayout({ children }) {
           <a
             aria-label="Facebook"
             className="  transition"
-            href="#"
+            href="https://web.facebook.com/md.robin.ahmed.548869"
           >
             <FaFacebook className="text-lg" />
           </a>
           <a
             aria-label="Twitter"
             className="  transition"
-            href="#"
+            href="https://x.com/Ro50846Robin"
           >
             <FaTwitter className="text-lg" />
           </a>
           <a
             aria-label="Instagram"
             className="  transition"
-            href="#"
+            href="https://www.instagram.com/47_m2024/"
           >
             <FaInstagram className="text-lg" />
           </a>
           <a
             aria-label="LinkedIn"
             className="  transition"
-            href="#"
+            href="https://www.linkedin.com/in/md-robin1/"
           >
             <FaLinkedin className="text-lg" />
           </a>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import {
   FaPalette,
@@ -72,9 +73,9 @@ export default function Services() {
               <p className="text-white text-xs md:text-sm leading-relaxed mb-4">
                 {description}
               </p>
-              <div className="text-[#e94e1b] font-semibold text-xs md:text-sm flex items-center gap-1 cursor-pointer select-none">
+              <Link href="/Contact" className="text-[#e94e1b] font-semibold text-xs md:text-sm flex items-center gap-1 cursor-pointer select-none">
                 Say Hello <FaCode className="inline" />
-              </div>
+              </Link>
             </div>
           ))}
         </div>

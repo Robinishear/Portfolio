@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { CgArrowUpO } from "react-icons/cg";
 import { FaArrowRight } from "react-icons/fa";
@@ -46,13 +47,13 @@ const page = () => {
               >
                 Suspendisse
               </a>
-              <a
+              <Link
                 rel="noopener noreferrer"
-                href="#"
+                href="/Contact"
                 className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r from-black via-gray-900 to-black"
               >
                 Malesuada
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex items-center justify-center  p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 animate-zoom-in">
@@ -150,15 +151,23 @@ const page = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                 <p className="mb-4">{project.desc}</p>
-                <a
+                <Link
                   className=" font-semibold hover:underline flex items-center"
-                  href="#"
+                  href="/Contact"
                 >
                   View Project <FaArrowRight className="ml-2" />
-                </a>
+                </Link>
               </div>
             </article>
           ))}
+        </div>
+        <div className="flex justify-center animate-slide-in-down mt-10">
+          <Link
+            href="/MyPortfolio"
+            className="text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-[2500ms] bg-gradient-to-r from-black via-gray-900 to-black"
+          >
+            View Portfolio
+          </Link>
         </div>
       </section>
 

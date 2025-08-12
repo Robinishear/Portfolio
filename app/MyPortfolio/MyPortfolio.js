@@ -2,6 +2,7 @@
 import React, { useState, useMemo } from "react";
 import { RxArrowRight } from "react-icons/rx";
 import { FaCode } from "react-icons/fa";
+import Link from "next/link";
 
 export default function CarGallery() {
   const TOTAL = 30;
@@ -285,12 +286,14 @@ export default function CarGallery() {
               <h2 className="text-lg font-semibold">{car.title}</h2>
               <p className="text-sm  mt-1">{car.description}</p>
               <div className="mt-4 flex justify-between items-center">
+                <Link href="/Contact"> 
                 <button
                   type="button"
                   className="inline-flex items-center -ml-4 gap-2 px-4 py-2 rounded-xl  text-sm font-medium  shadow-lg hover:shadow-amber-600/50 transition duration-2500 "
                 >
                   See More <RxArrowRight />
                 </button>
+                </Link>
                 <span className="text-xs 0">{car.id}</span>
               </div>
             </div>
