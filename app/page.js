@@ -3,10 +3,10 @@
 import Link from "next/link";
 import React from "react";
 import { CgArrowUpO } from "react-icons/cg";
-import { FaArrowRight } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
+import { FaArrowRight, FaCode } from "react-icons/fa";
+import Contact from "./Contact/Contact";
 
-const page = () => {
+const Page = () => {
   const skills = [
     "JavaScript",
     "React.Js",
@@ -23,6 +23,7 @@ const page = () => {
     "Git & GitHub",
     "TanStack Query",
   ];
+
   return (
     <div>
       {/* Hero Section */}
@@ -30,9 +31,8 @@ const page = () => {
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left animate-slide-in-left">
             <h1 className="text-5xl font-bold leading-none sm:text-6xl">
-              Mattis
-              <span className="dark:text-violet-600">senectus</span>erat
-              pharetra
+              Mattis{" "}
+              <span className="dark:text-violet-600">senectus</span> erat pharetra
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12 animate-fade-in">
               Dictum aliquam porta in condimentum ac integer
@@ -41,14 +41,13 @@ const page = () => {
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a
-                rel="noopener noreferrer"
                 href="#"
                 className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r from-black via-gray-900 to-black"
+                rel="noopener noreferrer"
               >
                 Suspendisse
               </a>
               <Link
-                rel="noopener noreferrer"
                 href="/Contact"
                 className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r from-black via-gray-900 to-black"
               >
@@ -56,19 +55,62 @@ const page = () => {
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center  p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 animate-zoom-in">
+
+          <div className="items-center -ml-8 justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-[28rem] 2xl:h-[32rem] animate-zoom-in relative">
+            {/* Left Text Content */}
+            <div className="max-w-xl">
+              <h2 className="flex items-center gap-2 mb-4">
+                <img
+                  src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif"
+                  alt="About Me Icon"
+                  width={30}
+                  height={30}
+                />
+              </h2>
+
+              <pre className="relative text-sm text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2000 whitespace-pre-wrap">
+                {`name: Md Robin Ahmed
+located_in: Mymensingh, Bangladesh
+current_work: Full-Stack Developer
+education:
+  - "Computer Science & Engineering at AIUB"
+
+fields_of_interests:
+  - "Web Development"
+  - "Full Stack Development"
+  - "Front-End Development"
+  - "Back-end Development"
+  - "Open Source"
+
+currently_learning:
+  - "Next.js 15"
+
+2025_goals:
+  - "Contribute to Open Source Projects"
+  - "Build Amazing Full-Stack Applications"
+  - "Learn Cloud Technologies"
+  - "Share Knowledge with Community" ?
+  - "<nav className="mt-8 flex flex-wrap justify-center gap-3">
+  - "{createButton("First", currentPage === 1, () => goToPage(1))}
+  - "{createButton("Prev", currentPage === 1, () =>
+  - "goToPage(currentPage - 1)
+  - )}
+`}
+              </pre>
+            </div>
+
+            {/* Right Image
             <img
-              alt="Portrait of a man with beard and suit"
-              className="mx-auto rounded-2xl w-[390px] h-[350px] object-cover mt-18 animate-bounce-slow"
-              height={350}
-              src="https://i.ibb.co.com/VYj4LhYs/4884785-1.jpg"
-              width={390}
-            />
+              src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif"
+              alt="Coding Animation"
+              className="absolute right-0 top-0 h-full hidden sm:block object-contain"
+              style={{ maxHeight: "370px" }}
+            /> */}
           </div>
         </div>
       </section>
 
-      {/* About Me */}
+      {/* About Me Section */}
       <div className="font-sans min-h-screen animate-fade-in">
         <div className="max-w-5xl mx-auto px-4 py-16 text-center relative">
           <h1 className="font-extrabold text-3xl mb-8 animate-slide-in-down">
@@ -76,7 +118,7 @@ const page = () => {
           </h1>
 
           <img
-            alt="Portrait of a man with beard and suit"
+            alt="Portrait of Md Robin Ahmed"
             className="mx-auto rounded-full border-4 border-yellow-400 w-[150px] h-[150px] object-cover animate-bounce-slow"
             height={150}
             src="https://storage.googleapis.com/a1aa/image/ebf51fef-1350-43f2-dc5a-9c10f9f0b3e8.jpg"
@@ -84,9 +126,9 @@ const page = () => {
           />
 
           <p className="mt-6 max-w-3xl mx-auto text-lg leading-relaxed animate-fade-in-up">
-            I’m Robin Ahmed, A Passionate MERN-Stack Web Developer Specializing
-            In The Front-End Development. I Enjoy Solving Real-World Problems
-            Through Clean, Scalable Code And Intuitive User Experiences.
+            I’m Robin Ahmed, a passionate MERN-Stack Web Developer specializing in
+            front-end development. I enjoy solving real-world problems through
+            clean, scalable code and intuitive user experiences.
           </p>
 
           <h2 className="text-yellow-400 font-bold text-2xl py-6 mt-2 mb-6 animate-pulse">
@@ -104,6 +146,7 @@ const page = () => {
             ))}
           </div>
 
+          {/* Scroll To Top Button */}
           <button
             aria-label="Scroll to top"
             className="fixed bottom-6 right-6 bg-yellow-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-500 transition transform hover:scale-110"
@@ -114,7 +157,7 @@ const page = () => {
         </div>
       </div>
 
-      {/* Portfolio */}
+      {/* Portfolio Section */}
       <section className="py-16" id="portfolio">
         <h2 className="text-3xl mb-12 text-center animate-slide-in-down">
           My Portfolio
@@ -139,11 +182,11 @@ const page = () => {
           ].map((project, i) => (
             <article
               key={i}
-              className="relative text-xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r "
+              className="relative text-xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r"
             >
               <img
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover rounded-md"
                 height={400}
                 src={project.img}
                 width={600}
@@ -152,8 +195,8 @@ const page = () => {
                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                 <p className="mb-4">{project.desc}</p>
                 <Link
-                  className=" font-semibold hover:underline flex items-center"
                   href="/Contact"
+                  className="font-semibold hover:underline flex items-center"
                 >
                   View Project <FaArrowRight className="ml-2" />
                 </Link>
@@ -171,7 +214,7 @@ const page = () => {
         </div>
       </section>
 
-      {/* Ripple Animation Style */}
+      {/* Ripple & Other Animation Styles */}
       <style>{`
         @keyframes ripple {
           0% {
@@ -242,8 +285,7 @@ const page = () => {
         }
       `}</style>
 
-      {/* See All Projects Button */}
-
+      {/* Scroll to Top Button */}
       <button
         aria-label="Scroll to top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -251,8 +293,9 @@ const page = () => {
       >
         <FaCode />
       </button>
+      <Contact/>
     </div>
   );
 };
 
-export default page;
+export default Page;

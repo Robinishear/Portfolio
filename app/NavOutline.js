@@ -68,6 +68,11 @@ const Navbar = () => {
                 Contact <span className={underline}></span>
               </button>
             </Link>
+            {/* <Link href="/download">
+              <button className={btnClass}>
+                download <span className={underline}></span>
+              </button>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -119,6 +124,11 @@ const Navbar = () => {
                 Contact <span className={underline}></span>
               </button>
             </Link>
+            {/* <Link href="/download">
+              <button className={btnClass + " w-11/12"}>
+                download <span className={underline}></span>
+              </button>
+            </Link> */}
           </div>
         </div>
       )}

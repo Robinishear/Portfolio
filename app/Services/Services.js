@@ -5,10 +5,16 @@ import React from "react";
 export default function SkillsGrid() {
   return (
     <div
-      className="min-h-screen p-6 md:p-10 font-sans "
-     
-    >
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 ">
+      className="min-h-screen p-6 md:p-10 font-sans ">
+    <div className="py-5 flex justify-center items-center mt-6">
+  <img
+    src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif"
+    alt="Coding Animation"
+    className="h-full max-h-[370px] sm:block object-contain"
+  />
+</div>
+
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
         {/* Frontend Development */}
         <section className="rounded-xl border border-[#2a1e5a] p-6 space-y-4 rounded-xl border border-[#2a1e5a] p-6 space-y-4  relative text-xl sm:text-2xl font-bold text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition  duration-1000">
           <div className="flex items-center gap-3">
@@ -24,43 +30,43 @@ export default function SkillsGrid() {
               {
                 alt: "HTML5 logo with orange background",
                 src:
-                  "https://placehold.co/16x16/png?text=5&font=roboto&font-weight=700&font-size=12&bg=e34f26&fg=fff",
+                  "https://i.ibb.co.com/VYW8SvFL/download.png",
                 label: "HTML5",
               },
               {
                 alt: "CSS3 logo with blue background",
                 src:
-                  "https://placehold.co/16x16/png?text=3&font=roboto&font-weight=700&font-size=12&bg=1572b6&fg=fff",
+                  "https://i.ibb.co.com/JRfMHjq1/download-1.png",
                 label: "CSS3",
               },
               {
                 alt: "JavaScript logo with yellow background",
                 src:
-                  "https://placehold.co/16x16/png?text=JS&font=roboto&font-weight=700&font-size=12&bg=f7df1e&fg=000",
+                  "https://i.ibb.co.com/Vc79JTMk/download-2.png",
                 label: "JavaScript",
               },
               {
                 alt: "React.js logo with light blue background",
                 src:
-                  "https://placehold.co/16x16/png?text=⚛&font=roboto&font-weight=700&font-size=12&bg=61dafb&fg=000",
+                  "https://i.ibb.co.com/NnjmBtNp/download-3.png",
                 label: "React.js",
               },
               {
                 alt: "Next.js logo with black background",
                 src:
-                  "https://placehold.co/16x16/png?text=N&font=roboto&font-weight=700&font-size=12&bg=000&fg=fff",
+                  "https://i.ibb.co.com/jk7pJxtL/download.jpg",
                 label: "Next.js",
               },
               {
                 alt: "React Router logo with red arrow on dark background",
                 src:
-                  "https://placehold.co/16x16/png?text=➔&font=roboto&font-weight=700&font-size=12&bg=dd0031&fg=fff",
+                  "https://i.ibb.co.com/tTTfwCY6/download-4.png",
                 label: "React Router",
               },
               {
                 alt: "Tailwind CSS logo with cyan background",
                 src:
-                  "https://placehold.co/16x16/png?text=~&font=roboto&font-weight=700&font-size=12&bg=06b6d4&fg=fff",
+                  "https://i.ibb.co.com/qF4tp8gS/download-1.jpg",
                 label: "Tailwind CSS",
               },
             ].map(({ alt, src, label }) => (
@@ -90,37 +96,37 @@ export default function SkillsGrid() {
               {
                 alt: "Node.js logo with green background",
                 src:
-                  "https://placehold.co/16x16/png?text=N&font=roboto&font-weight=700&font-size=12&bg=3c873a&fg=fff",
+                  "https://i.ibb.co.com/99z00GqQ/download-2.jpg",
                 label: "Node.js",
               },
               {
                 alt: "Express.js logo with gray background",
                 src:
-                  "https://placehold.co/16x16/png?text=Ex&font=roboto&font-weight=700&font-size=12&bg=555555&fg=fff",
+                  "https://i.ibb.co.com/svXN2mPW/download-5.png",
                 label: "Express.js",
               },
               {
                 alt: "MongoDB logo with green background",
                 src:
-                  "https://placehold.co/16x16/png?text=MDB&font=roboto&font-weight=700&font-size=12&bg=4db33d&fg=fff",
+                  "https://i.ibb.co.com/svFXgrC3/images.png",
                 label: "MongoDB",
               },
               {
                 alt: "Stripe logo with blue background",
                 src:
-                  "https://placehold.co/16x16/png?text=S&font=roboto&font-weight=700&font-size=12&bg=3a7bd5&fg=fff",
+                  "https://i.ibb.co.com/RTyRCFdt/download-6.png",
                 label: "Stripe",
               },
               {
                 alt: "JWT logo with purple background",
                 src:
-                  "https://placehold.co/16x16/png?text=Jwt&font=roboto&font-weight=700&font-size=12&bg=6a2c91&fg=fff",
+                  "https://i.ibb.co.com/MxZrG7pK/download-7.png",
                 label: "Jwt",
               },
               {
                 alt: "Axios logo with white background and purple border",
                 src:
-                  "https://placehold.co/16x16/png?text=1&font=roboto&font-weight=700&font-size=12&bg=5a5aaf&fg=000",
+                  "https://i.ibb.co.com/zhVg7fsY/download-8.png",
                 label: "Axios",
               },
             ].map(({ alt, src, label }) => (
@@ -150,13 +156,19 @@ export default function SkillsGrid() {
               {
                 alt: "Figma logo with red, green, blue colors",
                 src:
-                  "https://placehold.co/16x16/png?text=F&font=roboto&font-weight=700&font-size=12&bg=ff7262&fg=fff",
+                  "https://i.ibb.co.com/60vVXDF0/download-9.png",
                 label: "Figma",
               },
               {
                 alt: "Responsive Design icon with grid on gray background",
                 src:
-                  "https://placehold.co/16x16/png?text=R&font=roboto&font-weight=700&font-size=12&bg=6b7b8c&fg=fff",
+                  "https://i.ibb.co.com/spSKSSrN/download-3.jpg",
+                label: "Responsive Design",
+              },
+              {
+                alt: "Responsive Design icon with grid on gray background",
+                src:
+                  "https://i.ibb.co.com/spSKSSrN/download-3.jpg",
                 label: "Responsive Design",
               },
             ].map(({ alt, src, label }) => (
@@ -187,31 +199,31 @@ export default function SkillsGrid() {
               {
                 alt: "VS Code logo with blue background",
                 src:
-                  "https://placehold.co/16x16/png?text=VS&font=roboto&font-weight=700&font-size=12&bg=0078d7&fg=fff",
+                  "https://i.ibb.co.com/1JhzbMrd/download-10.png",
                 label: "VS Code",
               },
               {
                 alt: "Firebase logo with yellow background",
                 src:
-                  "https://placehold.co/16x16/png?text=FB&font=roboto&font-weight=700&font-size=12&bg=ffca28&fg=000",
+                  "https://i.ibb.co.com/23GvTppT/download-11.png",
                 label: "Firebase",
               },
               {
                 alt: "Vercel logo with black background",
                 src:
-                  "https://placehold.co/16x16/png?text=V&font=roboto&font-weight=700&font-size=12&bg=646cff&fg=fff",
+                  "https://i.ibb.co.com/sdP11cSK/download-12.png",
                 label: "Vercel",
               },
               {
                 alt: "Vite logo with yellow background",
                 src:
-                  "https://placehold.co/16x16/png?text=Vt&font=roboto&font-weight=700&font-size=12&bg=ffcb2b&fg=000",
+                  "https://i.ibb.co.com/Fb0xHTqq/download-13.png",
                 label: "Vite",
               },
               {
                 alt: "Netlify logo with teal background",
                 src:
-                  "https://placehold.co/16x16/png?text=Nf&font=roboto&font-weight=700&font-size=12&bg=00c8b8&fg=fff",
+                  "https://i.ibb.co.com/PsTYzz85/images-1.png",
                 label: "Netlify",
               },
             ].map(({ alt, src, label }) => (
@@ -241,9 +253,9 @@ export default function SkillsGrid() {
               <img
                 alt="Git logo with red background"
                 className="w-4 h-4"
-                src="https://placehold.co/16x16/png?text=G&font=roboto&font-weight=700&font-size=12&bg=f05032&fg=fff"
+                src="https://i.ibb.co.com/XkWwpgxj/images-3.png"
               />
-              Git
+              GitHup
             </div>
           </div>
         </section>
@@ -263,13 +275,13 @@ export default function SkillsGrid() {
               {
                 alt: "UI Animation logo with orange background",
                 src:
-                  "https://placehold.co/16x16/png?text=An&font=roboto&font-weight=700&font-size=12&bg=ea6a47&fg=fff",
+                  "https://i.ibb.co.com/5xgNYjZJ/images-4.png",
                 label: "UI Animation",
               },
               {
                 alt: "Motion Animation logo with yellow background",
                 src:
-                  "https://placehold.co/16x16/png?text=MA&font=roboto&font-weight=700&font-size=12&bg=fff200&fg=000",
+                  "https://i.ibb.co.com/PZqnZcD8/download-17.png",
                 label: "Motion Animation",
               },
             ].map(({ alt, src, label }) => (
@@ -283,6 +295,36 @@ export default function SkillsGrid() {
             ))}
           </div>
         </section>
+        
+              <pre className="relative text-sm text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2000 whitespace-pre-wrap">
+                {`name: Md Robin Ahmed
+located_in: Mymensingh, Bangladesh
+current_work: Full-Stack Developer
+education:
+  - "Computer Science & Engineering at AIUB"
+
+fields_of_interests:
+  - "Web Development"
+  - "Full Stack Development"
+  - "Front-End Development"
+  - "Back-end Development"
+  - "Open Source"
+
+currently_learning:
+  - "Next.js 15"
+
+2025_goals:
+  - "Contribute to Open Source Projects"
+  - "Build Amazing Full-Stack Applications"
+  - "Learn Cloud Technologies"
+  - "Share Knowledge with Community" ?
+  - "<nav className="mt-8 flex flex-wrap justify-center gap-3">
+  - "{createButton("First", currentPage === 1, () => goToPage(1))}
+  - "{createButton("Prev", currentPage === 1, () =>
+  - "goToPage(currentPage - 1)
+  - )}
+`}
+              </pre>
       </div>
     </div>
   );
