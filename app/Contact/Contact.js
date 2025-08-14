@@ -35,7 +35,7 @@ export default function Contact() {
         {/* Left Form */}
         <form
           onSubmit={handleSubmit}
-          className=" p-6 w-full max-w-md shadow-smrelative font-bold rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 border border-gray-300"
+          className=" p-6 w-full max-w-md shadow-smrelative font-bold rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 border border-gray-300"
           autoComplete="off"
         >
           <div className="mb-5">
@@ -85,14 +85,14 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="w-full relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r from-black via-gray-900 to-black"
+            className="w-full relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
           >
             Send Message
           </button>
         </form>
 
         {/* Right Information */}
-        <div className="p-6 w-full max-w-md shadow-smrelative font-bold rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 border border-gray-300">
+        <div className="p-6 w-full max-w-md shadow-smrelative font-bold rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 border border-gray-300">
           <h2 className="0 font-extrabold text-xl text-center mb-4 select-none">
             Our Information
           </h2>
@@ -135,7 +135,7 @@ export default function Contact() {
     href="https://web.facebook.com/md.robin.ahmed.548869"
     target="_blank"
     rel="noopener noreferrer"
-    className="cursor-pointer relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500"
+    className="cursor-pointer relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000"
   >
     <FaFacebookF />
   </Link>
@@ -144,7 +144,7 @@ export default function Contact() {
     href="https://www.linkedin.com/in/md-robin1/"
     target="_blank"
     rel="noopener noreferrer"
-    className="cursor-pointer relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500"
+    className="cursor-pointer relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000"
   >
     <FaLinkedinIn />
   </Link>
@@ -153,7 +153,7 @@ export default function Contact() {
     href="https://github.com/Robinishear"
     target="_blank"
     rel="noopener noreferrer"
-    className="cursor-pointer relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500"
+    className="cursor-pointer relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000"
   >
     <FaGithub />
   </Link>
@@ -162,7 +162,7 @@ export default function Contact() {
     href="https://web.whatsapp.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="cursor-pointer relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500"
+    className="cursor-pointer relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000"
   >
     <FaWhatsapp />
   </Link>

@@ -31,8 +31,8 @@ const Page = () => {
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left animate-slide-in-left">
             <h1 className="text-5xl font-bold leading-none sm:text-6xl">
-              Mattis{" "}
-              <span className="dark:text-violet-600">senectus</span> erat pharetra
+              Mattis <span className="dark:text-violet-600">senectus</span> erat
+              pharetra
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12 animate-fade-in">
               Dictum aliquam porta in condimentum ac integer
@@ -42,14 +42,14 @@ const Page = () => {
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a
                 href="#"
-                className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r from-black via-gray-900 to-black"
+                className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
                 rel="noopener noreferrer"
               >
                 Suspendisse
               </a>
               <Link
                 href="/Contact"
-                className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r from-black via-gray-900 to-black"
+                className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
               >
                 Malesuada
               </Link>
@@ -126,9 +126,9 @@ currently_learning:
           />
 
           <p className="mt-6 max-w-3xl mx-auto text-lg leading-relaxed animate-fade-in-up">
-            I’m Robin Ahmed, a passionate MERN-Stack Web Developer specializing in
-            front-end development. I enjoy solving real-world problems through
-            clean, scalable code and intuitive user experiences.
+            I’m Robin Ahmed, a passionate MERN-Stack Web Developer specializing
+            in front-end development. I enjoy solving real-world problems
+            through clean, scalable code and intuitive user experiences.
           </p>
 
           <h2 className="text-yellow-400 font-bold text-2xl py-6 mt-2 mb-6 animate-pulse">
@@ -139,7 +139,7 @@ currently_learning:
             {skills.map((skill) => (
               <span
                 key={skill}
-                className="relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r from-black via-gray-900 to-black"
+                className="relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
               >
                 {skill}
               </span>
@@ -182,7 +182,7 @@ currently_learning:
           ].map((project, i) => (
             <article
               key={i}
-              className="relative text-xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2500 bg-gradient-to-r"
+              className="relative text-xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r"
             >
               <img
                 alt={project.title}
@@ -207,7 +207,7 @@ currently_learning:
         <div className="flex justify-center animate-slide-in-down mt-10">
           <Link
             href="/MyPortfolio"
-            className="text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-[2500ms] bg-gradient-to-r from-black via-gray-900 to-black"
+            className="text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-[1000ms] bg-gradient-to-r from-black via-gray-900 to-black"
           >
             View Portfolio
           </Link>
@@ -286,14 +286,14 @@ currently_learning:
       `}</style>
 
       {/* Scroll to Top Button */}
-      <button
+      {/* <button
         aria-label="Scroll to top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="fixed bottom-6 right-6 bg-[#ffb400] w-12 h-12 rounded-full flex items-center justify-center text-black text-xl shadow-lg hover:shadow-xl transition-shadow"
       >
         <FaCode />
-      </button>
-      <Contact/>
+      </button> */}
+      <Contact />
     </div>
   );
 };

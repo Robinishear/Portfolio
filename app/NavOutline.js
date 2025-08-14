@@ -32,7 +32,7 @@ const Navbar = () => {
           >
             <span className="relative text-xl sm:text-2xl font-bold text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition   duration-2000 bg-gradient-to-r from-black via-gray-900 to-black">
               <span className="text-amber-300">MR</span>
-              <span className="ml-1">'Robin</span>
+              <span className="ml-1">Robin</span>
             </span>
           </a>
 

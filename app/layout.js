@@ -32,10 +32,10 @@ export default function RootLayout({ children }) {
         <footer className="border-t-2 border-blue-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row justify-between items-center">
         <p className=" text-sm">
-          © M'R Robin Ahmed..?
+          © M&apos;R Robin Ahmed..?
         </p>
         <p className=" text-sm">
-          © 2025 M'R Robin. All rights reserved.
+          © 2025 M&apos;R Robin. All rights reserved.
         </p>
 
         <div className="flex space-x-6 mt-4 md:mt-0">
