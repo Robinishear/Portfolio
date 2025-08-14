@@ -121,7 +121,7 @@ currently_learning:
             alt="Portrait of Md Robin Ahmed"
             className="mx-auto rounded-full border-4 border-yellow-400 w-[150px] h-[150px] object-cover animate-bounce-slow"
             height={150}
-            src="https://storage.googleapis.com/a1aa/image/ebf51fef-1350-43f2-dc5a-9c10f9f0b3e8.jpg"
+            src="https://i.ibb.co.com/Fq6XH0mR/IMG-20250813-180059.jpg"
             width={150}
           />
 
