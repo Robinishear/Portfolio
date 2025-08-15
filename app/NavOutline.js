@@ -69,8 +69,8 @@ const Navbar = () => {
               </button>
             </Link>
             <a
-              href="/resume.pdf"
-              download="Tasin-Resume.pdf"
+              href="/Screenshot.png"
+              download="Tasin-Resume.png"
               className="relative rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition   duration-2000 bg-gradient-to-r from-black via-gray-900 to-black"
             >
               Download 
@@ -131,11 +131,13 @@ const Navbar = () => {
                 Contact <span className={underline}></span>
               </button>
             </Link>
-            <Link href="/resume.pdf">
-              <button className={btnClass + " w-11/12"}>
-                Download <span className={underline}></span>
-              </button>
-            </Link>
+            <a
+              href="/Screenshot.png"
+              download="Tasin-Resume.png"
+              className="relative rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition   duration-2000 bg-gradient-to-r from-black via-gray-900 to-black"
+            >
+              Download 
+            </a>
             {/* <Link href="/download">
               <button className={btnClass + " w-11/12"}>
                 download <span className={underline}></span>

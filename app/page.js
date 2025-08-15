@@ -5,6 +5,7 @@ import React from "react";
 import { CgArrowUpO } from "react-icons/cg";
 import { FaArrowRight, FaCode } from "react-icons/fa";
 import Contact from "./Contact/Contact";
+import About from "./About/About";
 
 const Page = () => {
   const skills = [
@@ -110,53 +111,8 @@ currently_learning:
         </div>
       </section>
 
-      {/* About Me Section */}
-      <div className="font-sans min-h-screen animate-fade-in">
-        <div className="max-w-5xl mx-auto px-4 py-16 text-center relative">
-          <h1 className="font-extrabold text-3xl mb-8 animate-slide-in-down">
-            About Me
-          </h1>
-
-          <img
-            alt="Portrait of Md Robin Ahmed"
-            className="mx-auto rounded-full border-4 border-yellow-400 w-[150px] h-[150px] object-cover animate-bounce-slow"
-            height={150}
-            src="https://i.ibb.co.com/Fq6XH0mR/IMG-20250813-180059.jpg"
-            width={150}
-          />
-
-          <p className="mt-6 max-w-3xl mx-auto text-lg leading-relaxed animate-fade-in-up">
-            I’m Robin Ahmed, a passionate MERN-Stack Web Developer specializing
-            in front-end development. I enjoy solving real-world problems
-            through clean, scalable code and intuitive user experiences.
-          </p>
-
-          <h2 className="text-yellow-400 font-bold text-2xl py-6 mt-2 mb-6 animate-pulse">
-            My Skills
-          </h2>
-
-          <div className="flex flex-wrap justify-center gap-3 max-w-7xl mx-auto">
-            {skills.map((skill) => (
-              <span
-                key={skill}
-                className="relative font-bold  rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-
-        
-          <button
-            aria-label="Scroll to top"
-            className="fixed bottom-6 right-6 bg-yellow-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-500 transition transform hover:scale-110"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            <CgArrowUpO className="text-2xl" />
-          </button>
-        </div>
-        
-      </div>
+    {/* About */}
+  <About></About>
 
       {/* Portfolio Section */}
       <section className="py-16" id="portfolio">
@@ -196,7 +152,7 @@ currently_learning:
                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                 <p className="mb-4">{project.desc}</p>
                 <Link
-                  href="/Contact"
+                  href="/MyPortfolio"
                   className="font-semibold hover:underline flex items-center"
                 >
                   View Project <FaArrowRight className="ml-2" />
