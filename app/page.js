@@ -39,21 +39,21 @@ const Page = () => {
               <br className="hidden md:inline lg:hidden" />
               turpis pulvinar, est scelerisque ligula sem
             </p>
-            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            {/* <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a
                 href="#"
-                className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
+                className="relative text-2xl font-bold  rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
                 rel="noopener noreferrer"
               >
                 Suspendisse
               </a>
               <Link
                 href="/Contact"
-                className="relative text-2xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
+                className="relative text-2xl font-bold  rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
               >
                 Malesuada
               </Link>
-            </div>
+            </div> */}
           </div>
 
           <div className="items-center -ml-8 justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-[28rem] 2xl:h-[32rem] animate-zoom-in relative">
@@ -68,7 +68,7 @@ const Page = () => {
                 />
               </h2>
 
-              <pre className="relative text-sm text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-2000 whitespace-pre-wrap">
+              <pre className="relative text-sm  rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-2000 whitespace-pre-wrap">
                 {`name: Md Robin Ahmed
 located_in: Mymensingh, Bangladesh
 current_work: Full-Stack Developer
@@ -139,14 +139,14 @@ currently_learning:
             {skills.map((skill) => (
               <span
                 key={skill}
-                className="relative font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
+                className="relative font-bold  rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
               >
                 {skill}
               </span>
             ))}
           </div>
 
-          {/* Scroll To Top Button */}
+        
           <button
             aria-label="Scroll to top"
             className="fixed bottom-6 right-6 bg-yellow-400 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-500 transition transform hover:scale-110"
@@ -155,6 +155,7 @@ currently_learning:
             <CgArrowUpO className="text-2xl" />
           </button>
         </div>
+        
       </div>
 
       {/* Portfolio Section */}
@@ -182,7 +183,7 @@ currently_learning:
           ].map((project, i) => (
             <article
               key={i}
-              className="relative text-xl font-bold text-lime-300 rounded-2xl px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r"
+              className="relative text-xl font-bold  rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r"
             >
               <img
                 alt={project.title}
@@ -207,7 +208,7 @@ currently_learning:
         <div className="flex justify-center animate-slide-in-down mt-10">
           <Link
             href="/MyPortfolio"
-            className="text-lime-300 rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-[1000ms] bg-gradient-to-r from-black via-gray-900 to-black"
+            className=" rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-[1000ms] bg-gradient-to-r from-black via-gray-900 to-black"
           >
             View Portfolio
           </Link>

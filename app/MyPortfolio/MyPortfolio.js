@@ -273,7 +273,7 @@ export default function CarGallery() {
         {visibleCars.map((car) => (
           <article
             key={car.id}
-            className="relative text-xl sm:text-2xl font-bold  rounded-2xl px-4 sm:px-5 py-2 shadow-lg hover:shadow-amber-600/50 transition duration-1000 bg-gradient-to-r "
+            className="relative text-xl sm:text-2xl font-bold  rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r "
           >
             <div className="aspect-[4/3] w-full overflow-hidden">
               <img
@@ -289,7 +289,7 @@ export default function CarGallery() {
                 <Link href="/Contact"> 
                 <button
                   type="button"
-                  className="inline-flex items-center -ml-4 gap-2 px-4 py-2 rounded-xl  text-sm font-medium  shadow-lg hover:shadow-amber-600/50 transition duration-1000 "
+                  className="inline-flex items-center -ml-4 gap-2 px-4 py-2 rounded-xl  text-sm font-medium  shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 "
                 >
                   See More <RxArrowRight />
                 </button>
