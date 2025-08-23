@@ -6,6 +6,7 @@ import { CgArrowUpO } from "react-icons/cg";
 import { FaArrowRight, FaCode } from "react-icons/fa";
 import Contact from "./Contact/Contact";
 import About from "./About/About";
+import Services from "./Services/Services";
 
 const Page = () => {
   const skills = [
@@ -28,91 +29,64 @@ const Page = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="animate-fade-in-up">
-        <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-          <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left animate-slide-in-left">
-            <h1 className="text-5xl font-bold leading-none sm:text-6xl">
-              Mattis <span className="dark:text-violet-600">senectus</span> erat
-              pharetra
-            </h1>
-            <p className="mt-6 mb-8 text-lg sm:mb-12 animate-fade-in">
-              Dictum aliquam porta in condimentum ac integer
-              <br className="hidden md:inline lg:hidden" />
-              turpis pulvinar, est scelerisque ligula sem
-            </p>
-            {/* <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <a
-                href="#"
-                className="relative text-2xl font-bold  rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
-                rel="noopener noreferrer"
-              >
-                Suspendisse
-              </a>
-              <Link
-                href="/Contact"
-                className="relative text-2xl font-bold  rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
-              >
-                Malesuada
-              </Link>
-            </div> */}
-          </div>
+    <div className="relative min-h-screen flex items-center">
+  <div className="px-6 mx-auto max-w-7xl sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    {/* Left Side - Text */}
+    <div className="text-center lg:text-left">
+      <p className="tracking-tight text-white">
+        <span className="block font-serif italic font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-amber-400">
+          Hi, I’m -
+        </span>
+        <span className="block font-serif italic font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-amber-400">
+          Robin Ahmed
+        </span>
+      </p>
 
-          <div className="items-center -ml-8 justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-[28rem] 2xl:h-[32rem] animate-zoom-in relative">
-            {/* Left Text Content */}
-            <div className="max-w-xl">
-              <h2 className="flex items-center gap-2 mb-4">
-                <img
-                  src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif"
-                  alt="About Me Icon"
-                  width={30}
-                  height={30}
-                />
-              </h2>
+      <p className="mt-6 font-sans text-base sm:text-lg md:text-xl leading-relaxed text-white/80">
+        I’m a passionate{" "}
+        <span className="font-semibold text-white">MERN Stack Developer</span>{" "}
+        with expertise in building full-stack web apps, real-time systems, and
+        interactive UI.
+      </p>
 
-              <pre className="relative text-sm  rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-2000 whitespace-pre-wrap">
-                {`name: Md Robin Ahmed
-located_in: Mymensingh, Bangladesh
-current_work: Full-Stack Developer
-education:
-  - "Computer Science & Engineering at AIUB"
+      {/* <p className="mt-6 font-sans text-lg text-white">
+        Available from{" "}
+        <span className="font-bold text-amber-400">$</span>
+      </p> */}
 
-fields_of_interests:
-  - "Web Development"
-  - "Full Stack Development"
-  - "Front-End Development"
-  - "Back-end Development"
-  - "Open Source"
+      {/* CTA Buttons */}
+      <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
+        <a
+          href="#projects"
+          className="px-6 py-3 text-lg font-semibold text-black bg-amber-400 rounded-xl shadow hover:bg-amber-500 transition"
+        >
+          View Projects
+        </a>
+        <a
+          href="Contact"
+          className="px-6 py-3 text-lg font-semibold text-white border border-white rounded-xl hover:bg-white hover:text-black transition"
+        >
+          Contact Me
+        </a>
+      </div>
+    </div>
 
-currently_learning:
-  - "Next.js 15"
+    {/* Right Side - Image */}
+    <div className="flex justify-center lg:justify-end">
+      <img
+        className="w-full max-w-md rounded-2xl shadow-lg object-cover"
+        src="https://i.ibb.co.com/C3jy8Bh0/1739706192989.jpg"
+        alt="Hero Image"
+      />
+    </div>
 
-2025_goals:
-  - "Contribute to Open Source Projects"
-  - "Build Amazing Full-Stack Applications"
-  - "Learn Cloud Technologies"
-  - "Share Knowledge with Community" ?
-  - "<nav className="mt-8 flex flex-wrap justify-center gap-3">
-  - "{createButton("First", currentPage === 1, () => goToPage(1))}
-  - "{createButton("Prev", currentPage === 1, () =>
-  - "goToPage(currentPage - 1)
-  - )}
-`}
-              </pre>
-            </div>
-
-            {/* Right Image
-            <img
-              src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif"
-              alt="Coding Animation"
-              className="absolute right-0 top-0 h-full hidden sm:block object-contain"
-              style={{ maxHeight: "370px" }}
-            /> */}
-          </div>
-        </div>
-      </section>
+  </div>
+</div>
 
     {/* About */}
   <About></About>
+  <Services/>
 
       {/* Portfolio Section */}
       <section className="py-16" id="portfolio">
@@ -139,7 +113,7 @@ currently_learning:
           ].map((project, i) => (
             <article
               key={i}
-              className="relative text-xl font-bold  rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r"
+              className="relative text-sx rounded-2xl px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition duration-1000 bg-gradient-to-r"
             >
               <img
                 alt={project.title}
@@ -149,11 +123,11 @@ currently_learning:
                 width={600}
               />
               <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
+                <h3 className=" mb-2">{project.title}</h3>
                 <p className="mb-4">{project.desc}</p>
                 <Link
                   href="/MyPortfolio"
-                  className="font-semibold hover:underline flex items-center"
+                  className=" hover:underline flex items-center"
                 >
                   View Project <FaArrowRight className="ml-2" />
                 </Link>
@@ -242,14 +216,7 @@ currently_learning:
         }
       `}</style>
 
-      {/* Scroll to Top Button */}
-      {/* <button
-        aria-label="Scroll to top"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-6 right-6 bg-[#ffb400] w-12 h-12 rounded-full flex items-center justify-center text-black text-xl shadow-lg hover:shadow-xl transition-shadow"
-      >
-        <FaCode />
-      </button> */}
+
       <Contact />
     </div>
   );

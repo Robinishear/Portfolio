@@ -53,7 +53,7 @@ const About = () => {
         <img
           alt="Portrait of Robin Ahmed"
           className="mx-auto rounded-full border-4 border-yellow-400 w-[150px] h-[150px] object-cover animate-bounce-slow shadow-lg"
-          src="https://i.ibb.co.com/Fq6XH0mR/IMG-20250813-180059.jpg"
+          src="https://i.ibb.co.com/C3jy8Bh0/1739706192989.jpg"
         />
 
         {/* Description */}
@@ -80,7 +80,7 @@ const About = () => {
                 {skill.icon}
               </div>
               <p className="mt-2 font-semibold">{skill.name}</p>
-              <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-cyan-400/60  transition-all duration-1000"></div>
+              <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-cyan-400/90  transition-all duration-1000"></div>
             </div>
           ))}
         </div>

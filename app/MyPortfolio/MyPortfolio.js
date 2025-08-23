@@ -13,13 +13,7 @@ export default function CarGallery() {
       { image: "https://i.ibb.co/NgjyPTvV/1753940448036.jpg", description: "" },
       { image: "https://i.ibb.co/1NDHGzr/1753941327185.jpg", description: "" },
       { image: "https://i.ibb.co/Y5scVbp/1753941326895.jpg", description: "" },
-      { image: "https://i.ibb.co/jPcv0JNw/1753941327117.jpg", description: "" },
-      { image: "https://i.ibb.co/XkL38q0f/1753941326893.jpg", description: "" },
-      { image: "https://i.ibb.co/ZRPvtZVm/1753941326953.jpg", description: "" },
-      { image: "https://i.ibb.co/4nmBg8y3/1753941327078.jpg", description: "" },
-      { image: "https://i.ibb.co/XrTxMDrW/1753941327162.jpg", description: "" },
-      { image: "https://i.ibb.co/QjCNR1Hk/Screenshot-79.png", description: "" },
-      { image: "https://i.ibb.co/mFdbhkG/2f3136af9542ea7fec9beb2d66cc9a38.jpg", description: "" },
+
     ],
     []
   );

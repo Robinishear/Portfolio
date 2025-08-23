@@ -68,18 +68,17 @@ const Navbar = () => {
                 Contact <span className={underline}></span>
               </button>
             </Link>
-            <a
-              href="/Screenshot.png"
-              download="Tasin-Resume.png"
-              className="relative rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition   duration-2000 bg-gradient-to-r from-black via-gray-900 to-black"
-            >
-              Download 
-            </a>
-            {/* <Link href="/download">
-              <button className={btnClass}>
-                download <span className={underline}></span>
-              </button>
-            </Link> */}
+         <a
+  aria-label="Google Drive Link"
+  className="transition text-lg  rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60 transition   duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
+  href="https://drive.google.com/file/d/1QmlppC4bGFjSuPwbCu5HYLqRRnctKPrC/view"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+ Resumi 
+</a>
+
+         
           </div>
 
           {/* Mobile Menu Button */}
@@ -131,18 +130,17 @@ const Navbar = () => {
                 Contact <span className={underline}></span>
               </button>
             </Link>
-            <a
-              href="/Screenshot.png"
-              download="Tasin-Resume.png"
-              className="relative rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60  transition   duration-2000 bg-gradient-to-r from-black via-gray-900 to-black"
-            >
-              Download 
-            </a>
-            {/* <Link href="/download">
-              <button className={btnClass + " w-11/12"}>
-                download <span className={underline}></span>
-              </button>
-            </Link> */}
+                <a
+  aria-label="Google Drive Link"
+  className="transition text-lg"
+  href="https://drive.google.com/file/d/1QmlppC4bGFjSuPwbCu5HYLqRRnctKPrC/view"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+ Resumi 
+</a>
+
+         
           </div>
         </div>
       )}
