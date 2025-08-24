@@ -7,6 +7,7 @@ import { FaArrowRight, FaCode } from "react-icons/fa";
 import Contact from "./Contact/Contact";
 import About from "./About/About";
 import Services from "./Services/Services";
+import Education from "./Education/Education";
 
 const Page = () => {
   const skills = [
@@ -86,6 +87,7 @@ const Page = () => {
 
     {/* About */}
   <About></About>
+  <Education></Education>
   <Services/>
 
       {/* Portfolio Section */}

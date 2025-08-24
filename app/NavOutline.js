@@ -68,17 +68,13 @@ const Navbar = () => {
                 Contact <span className={underline}></span>
               </button>
             </Link>
-         <a
-  aria-label="Google Drive Link"
-  className="transition text-lg  rounded-2xl px-4 sm:px-5 py-2 shadow-lg  hover:shadow-cyan-400/60 transition   duration-1000 bg-gradient-to-r from-black via-gray-900 to-black"
-  href="https://drive.google.com/file/d/1QmlppC4bGFjSuPwbCu5HYLqRRnctKPrC/view"
-  target="_blank"
-  rel="noopener noreferrer"
->
- Resumi 
-</a>
-
-         
+        <a
+        href="/robin.pdf"
+        download="Robin-Resume.pdf" 
+        className="px-6 py-3 bg-red-600 text-white font-semibold rounded-md shadow-lg hover:bg-red-700 transition-colors duration-300"
+      >
+        Resumi
+        </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -130,17 +126,15 @@ const Navbar = () => {
                 Contact <span className={underline}></span>
               </button>
             </Link>
-                <a
-  aria-label="Google Drive Link"
-  className="transition text-lg"
-  href="https://drive.google.com/file/d/1QmlppC4bGFjSuPwbCu5HYLqRRnctKPrC/view"
-  target="_blank"
-  rel="noopener noreferrer"
->
- Resumi 
-</a>
-
-         
+            <a
+              aria-label="Google Drive Link"
+              className="transition text-lg"
+              href="https://drive.google.com/file/d/1QmlppC4bGFjSuPwbCu5HYLqRRnctKPrC/view"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resumi
+            </a>
           </div>
         </div>
       )}
